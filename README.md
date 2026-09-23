@@ -19,7 +19,7 @@ The system:
 - Rejects unsupported questions instead of generating unsupported answers
 
 ## Architecture
-
+```text
 User Question
     |
     v
@@ -39,9 +39,9 @@ Grounded Answer
     |
     v
 Source Attribution
-
+```
 ## Technology Stack
-
+```text
 Python
 LangChain
 FAISS
@@ -54,9 +54,9 @@ FastAPI
 PyPDF
 Pandas
 NumPy
-
+```
 ## Project Structure
-
+```text
 enterprise-rag-assistant/
 |
 ├── data/
@@ -87,7 +87,7 @@ enterprise-rag-assistant/
 ├── .gitignore
 ├── README.md
 └── requirements.txt
-
+```
 ## Knowledge Base
 
 The current demonstration knowledge base contains five enterprise policy documents:
@@ -179,7 +179,7 @@ ollama pull phi3
 ollama list
 
 ### 5. Prepare the knowledge base
-
+```text
 The demonstration project includes:
 data/documents/
 ├── leave_policy.txt
@@ -187,7 +187,7 @@ data/documents/
 ├── health_insurance_policy.txt
 ├── travel_policy.txt
 └── expense_policy.txt
-
+```
 ### 6. Build the FAISS vector store
 python src\vector_store.py
 
